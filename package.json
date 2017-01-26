@@ -1,0 +1,22 @@
+{
+  "name": "test_sass",
+  "version": "1.0.0",
+  "description": "test grunt sass plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-tet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krisspoz/sass.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Krzysztof Stankowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krisspoz/sass/issues"
+  },
+  "homepage": "https://github.com/krisspoz/sass#readme"
+}
