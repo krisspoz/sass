@@ -1,0 +1,599 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+$color-blue: #5786d4
+$color-gray: #425969
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0 auto
+	font-family: 'Open Sans', sans-serif
+
+.row:before,
+.row:after
+	content: " "
+	display: table
+
+.row:after
+	clear: both
+
+[class*="col-"]
+	width: 100%
+	padding: 12px
+	float: left
+
+/*-----Header-----*/
+header
+	background-color: #313234
+	height: auto
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+
+nav
+	ul 
+		margin: 0
+		padding: 0
+		list-style-type: none
+		float: right
+
+	li
+		display: inline-block
+
+	a
+		line-height: 79px
+		padding: 0 20px
+		display: block
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		font-weight: bold
+		&:hover
+			background-color: gray
+			transition: .3s
+
+	img
+		padding: 5px 0
+		width: 100px
+		height: 70px
+
+/*-----Hero section-----*/
+.hero
+	width: 100%
+	height: 100vh
+	padding-top: 50px
+	box-sizing: border-box
+	text-align: center
+	background-image: url("https://static.pexels.com/photos/80455/delta-wings-aircraft-stealth-bomber-cloak-of-invisibility-80455.jpeg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	overflow: hidden
+
+.slogan
+	width: 600px
+	max-width: 800px
+	float: right
+	margin-top: 250px
+	padding: 20px
+	background-color: rgba(49, 50, 52, 0.5)
+	
+	h1
+		text-transform: uppercase
+		color: white
+		text-shadow: 2px 2px 7px #000
+		letter-spacing: 5px
+
+/*-----Grid-----*/
+.row:before,
+.row:after
+	content: ""
+	display: table
+	clear: both
+
+[class*="col-"]
+	float: left
+	min-height: 1px
+	padding: 5px
+
+.col-1
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33% 
+.col-5
+	width: 41.66%
+.col-6
+	width: 50% 
+.col-7
+	width: 58.33% 
+.col-8
+	width: 66.66% 
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66% 
+.col-12
+	width: 100%
+
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66% 
+.col-offset-3
+	margin-left: 25% 
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66% 
+.col-offset-6
+	margin-left: 50% 
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10
+	margin-left: 83.33%
+.col-offset-11
+	margin-left: 91.66%
+ 
+/*-----Benefits section-----*/
+.benefits
+	width: 100%
+	height: 100vh
+	padding-top: 100px
+	box-sizing: border-box
+	text-align: center
+
+	i.fa
+		color: white
+		background-color: $color-blue
+		height: 150px
+		width: 150px
+		padding-top: 25px
+		font-size: 100px
+		border: 2px solid $color-blue
+		border-radius: 10px
+		text-align: center
+		&:hover
+			background-color: $color-gray
+			color: white
+			border-color: white
+			transition: 0.2s
+			cursor: pointer
+
+	h2
+		font-size: 25px
+		text-transform: uppercase
+		color: $color-gray
+
+	p
+		font-size: 15px
+		text-transform: uppercase
+		text-align: center
+		color: $color-blue
+
+.benefits .container .row .col-12 > h2
+	font-size: 45px
+	padding-top: 90px
+	color: $color-gray
+
+/*-----Gallery section-----*/
+.clearfix:before,
+.clearfix:after
+	content: " "
+	clear: both
+	display: block
+
+.gallery1
+	background-image: url(https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?h=350&auto=compress)
+
+.gallery2
+	background-image: url(https://images.pexels.com/photos/40753/military-raptor-jet-f-22-airplane-40753.jpeg?h=350&auto=compress&cs=tinysrgb)
+
+.gallery3
+	background-image: url(https://images.pexels.com/photos/113017/pexels-photo-113017.jpeg?h=350&auto=compress&cs=tinysrgb)
+
+.gallery4
+	background-image: url(https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?h=350&auto=compress)
+
+.gallery5
+	background-image: url(https://images.pexels.com/photos/121219/pexels-photo-121219.jpeg?h=350&auto=compress&cs=tinysrgb)
+
+.gallery6
+	background-image: url(https://images.pexels.com/photos/66872/reno-airshow-airplanes-air-show-military-jets-66872.jpeg?h=350&auto=compress&cs=tinysrgb)
+
+.gallery7
+	background-image: url(https://images.pexels.com/photos/129877/pexels-photo-129877.jpeg?h=350&auto=compress)
+
+.gallery8
+	background-image: url(https://images.pexels.com/photos/69827/aircraft-qantas-air-new-zealand-lan-chile-69827.jpeg?h=350&auto=compress&cs=tinysrgb)
+
+.gallery
+	float: left
+	width: 100%
+	padding: 0
+	margin-top: 0
+	overflow: hidden
+
+.col-3
+	float: left
+	width: 25%
+	padding: 0
+	margin: 0
+
+.gallery-image
+	height: 300px
+	background-size: cover
+	background-position: center
+
+	i.fa
+		color: transparent
+		line-height: 300px
+
+.gallery-image:hover .layer
+	background-color: rgba(0,0,0, 0.75)
+	height: 100%
+
+.gallery-image:hover i.fa
+	color: white
+
+
+.layer
+	position: relative
+
+	i.fa-camera-retro
+		position: absolute
+		left: 42%
+
+	i.fa-search
+		position: absolute
+		right: 42%
+
+/*-----Team section-----*/
+.team
+	width: 100%
+	height: 100vh
+	box-sizing: border-box
+	text-align: center
+	display: block
+
+	img
+		height: 150px
+		width: 150px
+		border-radius: 50%
+		text-align: center
+		&:hover
+			cursor: pointer
+			opacity: 0.5
+			transition: 0.3s
+
+	h2
+		font-size: 20px
+		text-transform: uppercase
+		letter-spacing: 3px
+		color: $color-gray
+
+	p
+		font-size: 15px
+		text-transform: uppercase
+		text-align: center
+		color: $color-blue
+
+.col-4
+	padding-top: 100px
+
+/*-----Information section-----*/
+.information
+	background-color: $color-blue
+	width: 100%
+	padding: 0
+	float: left
+	margin: 100px 0
+
+	img
+		float: left
+		padding: 0
+		margin: 0
+		width: 500px
+		height: 350px
+
+	h2
+		padding: 0
+		margin: 0
+		font-size: 25px
+		text-align: center
+		text-transform: uppercase
+		color: white
+
+	p
+		padding-left: 20px
+		font-size: 15px
+		text-align: justify
+		color: white
+		line-height: 25px
+
+.information .container .row > .col-4
+	float: left
+	margin: 0
+	padding: 0
+
+.information .container .row .col-8
+	padding: 20px 20px 0 100px
+
+
+.information .container .row .col-8 .col-4
+	width: 50%
+	padding: 20px 0 0 50px
+
+
+.information .container .row .col-8 .row .col-4:last-child
+	font-style: italic
+
+/*-----Numbers section-----*/
+.numbers
+	margin-bottom: 100px
+
+	h2
+		font-weight: bold
+		text-align: center
+		letter-spacing: 3px
+		font-family: 'Raleway'
+		font-weight: 1000
+		font-size: 50px
+		color: $color-gray
+
+	p
+		font-weight: bold
+		text-align: center
+		letter-spacing: 3px
+		text-transform: uppercase
+		color: $color-blue
+		font-size: 15px
+	
+/*-----Footer section-----*/
+.footer
+	background-color: #313234
+
+	h2
+		color: white
+		text-transform: uppercase
+		font-size: 25px
+	p
+		color: white
+		text-align: justify
+		font-size: 15px
+	i.fa
+		color: white
+		background-color: $color-blue
+		height: 40px
+		width: 40px
+		line-height: 40px
+		font-size: 25px
+		margin-right: 5px
+		border: 2px solid $color-blue
+		border-radius: 10px
+		text-align: center
+		&:hover
+			background-color: $color-gray
+			color: white
+			border-color: white
+			transition: 0.2s
+			cursor: pointer
+
+.footer .col-4
+	padding: 15px
+
+.footer .col-2 p
+	font-weight: bold
+	
+.footer2 .bottom
+	background-color: black
+	width: 100%
+
+.footer2 .bottom .col-12 h2
+	color: white
+	text-align: center
+	font-size: 15px
+	line-height: 15px
+
+
+@media (max-width: 767px)
+	
+	/*---Grid---*/
+
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-11
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+	/*---Header---*/
+    
+	header
+		height: auto
+
+	nav
+
+		ul
+			float: none
+			display: block
+			text-align: center
+
+		li
+			float: none
+			display: block
+			margin: 0 auto
+			text-align: center
+
+		img
+			float: none
+			display: block
+			text-align: center
+			height: auto
+			margin: 0 auto
+
+
+	/*---Hero---*/
+
+	.slogan
+		width: 350px
+		max-width: 400px
+		margin-top: 300px
+
+		h1
+			font-size: 15px
+
+
+	/*---Benefits---*/
+
+	.benefits
+	
+		i.fa
+			height: 125px
+			width: 125px
+			padding-top: 20px
+			font-size: 70px
+	
+		h2
+			font-size: 15px
+	
+		p
+			font-size: 12px
+
+	.benefits .container .row .col-12 > h2
+		font-size: 30px
+
+
+	/*---Gallery---*/
+
+	.gallery-image
+		height: 200px
+
+		i.fa
+			color: white
+			line-height: 200px
+
+	.layer
+
+		i.fa-camera-retro
+			position: absolute
+			left: 35%
+
+		i.fa-search
+			position: absolute
+			right: 35%
+
+
+	/*---Team---*/
+
+	.team
+	
+		img
+			height: 90px
+			width: 90px
+
+		h2
+			font-size: 13px
+
+		p
+			font-size: 12px
+
+
+	/*---Information---*/
+
+	.information
+		margin-bottom: 50px
+
+		img
+			height: auto
+			width: 100%
+
+		h2
+			font-size: 15px
+
+		p
+			padding-left: 0px
+			font-size: 12px
+			line-height: 15px
+
+	.information .container .row div:nth-child(2)
+		padding: 20px
+
+	.information .container .row .col-s-12 .col-s-6
+		width: 50%
+		padding: 10px
+
+	/*---Numbers---*/
+
+	.numbers
+		margin-bottom: 50px
+
+		h2
+			letter-spacing: 2px
+			font-weight: 1000
+			font-size: 20px
+
+		p
+			letter-spacing: 2px
+			font-size: 10px
+
+	/*-----Footer section-----*/
+
+	.footer
+
+		h2
+			font-size: 15px
+			text-align: center
+
+		p
+			font-size: 9px
+
+		i.fa
+			height: 30px
+			width: 30px
+			line-height: 30px
+			font-size: 20px
+			margin-right: 3px
+			border: 1px solid $color-blue
+			border-radius: 5px
+
+	.footer .col-s-4
+		padding: 5px
+
+	.footer .col-s-8
+		padding: 5px
+
+	.footer .col-s-12
+		padding: 5px
+
+
